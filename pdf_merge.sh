@@ -1,5 +1,6 @@
 #!/bin/bash
 # Join a list of pdf files into one document.
+# See license file for licensing/copyright details.
 
 # Expects files to be named: "1", "2", "3", ect. 
 # then pass the number of pages as an argument

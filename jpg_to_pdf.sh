@@ -1,4 +1,6 @@
 #!/bin/bash
+# See license file for licensing/copyright details.
+
 # Make a list of .jpg images into a list of pdf files.
 # All pdf files are then merged into a single pdf document.
 # Use: Use: ./jpg_to_pdf <num files>

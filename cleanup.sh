@@ -1,5 +1,6 @@
 #!/bin/bash
 # Remove temporary .jpg files and pdf files.
+# See license file for licensing/copyright details.
 
 [ "$1" = "" ] && echo 'Use: ./cleanup.sh <num pages>' && exit 1
 
