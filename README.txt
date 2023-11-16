@@ -5,8 +5,8 @@ Installation:
 #1: Install the required tools with this command:
 sudo apt install imagemagick poppler-utils
 
-#2: Allow imagemagick to open PDF's with this command:
-./enable_pdfs
+#2: Allow imagemagick to open PDF's using the provided script:
+./enable_pdfs.sh
 
 ========================
 Instructions:
@@ -16,7 +16,7 @@ Instructions:
 1.jpg, 2.jpg, 3.jpg, ect.
 
 #2: Run the jpg_to_pdf script like so:
-./jpg_to_pdf <number of pages>
+./jpg_to_pdf.sh <number of pages>
 
 #3: Your images are now merged into a single PDF document:
 finished_pdf.pdf
