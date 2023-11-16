@@ -12,14 +12,12 @@ sudo apt install imagemagick poppler-utils
 Instructions:
 =============
 
-#1: Name your images like so:
-1.jpg, 2.jpg, 3.jpg, ect.
+#1: Name your images like so: 1.jpg, 2.jpg, 3.jpg, ect.
 
-#2: Run the jpg_to_pdf script like so:
+#2: Run the script:
 ./jpg_to_pdf.sh <number of pages>
 
-#3: Your images are now merged into a single PDF document:
-finished_pdf.pdf
+#3: Your images are now merged into a single PDF document: finished_pdf.pdf
 
 
 
@@ -32,16 +30,13 @@ Advanced Info:
 You can merge images and pre-existing pdf documents together.
 
 Say you want to sandwich some PDF document "report.pdf" between two images:
-    > rename the first image to:
-        "1.jpg"
-    > rename the PDF document from "report.pdf" to:
-        "2"
-    > rename the second image to:
-        "3.jpg"
-    > Run: ./jpg_to_pdf 3
+    #1: rename the first image to:  1.jpg
+    #2: rename the PDF document to: 2
+    #3: rename the second image to: 3.jpg
+    #4: Run:
+    ./jpg_to_pdf.sh 3
 
-This works because jpg_to_pdf converts all images
-in the range "1.jpg" to "N.jpg" into their own pdf files,
-naming them "1" to "N" respectively.
-
-Then, all pdf files named "1" to "N" are merged into one pdf file.
+This works because jpg_to_pdf.sh converts a given
+"<number>.jpg" image file to an equivalent
+"<number>"     pdf file,
+then merges "1" to "<number of pages>" into a single PDF.
